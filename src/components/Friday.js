@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useAppContext } from "../global/AppContext";
 
-import muz1 from "../music/au2 (5).mp3";
-import muz2 from "../music/AUD-20231219-WA0089.mp3";
+
+import muz2 from "../music/Асылбек Насирдинов - Улуу көч.mp3";
 import muz3 from "../music/au4.mp3";
-import muz4 from "../music/au6.mp3";
-import muz5 from "../music/au7.mp3";
-import muz6 from "../music/jjj.mp3";
+import muz5 from "../music/kyrgyz_music_34.mp3";
+import muz4 from "../music/нурак-комузкууу_(muzmo.su).mp3";
+
+import muz6 from "../music/FeeltheRhythmofKyrgyzstanBishkekмелодия2.mp3";
+import muz1 from "../music/МашБотой2.mp3";
 
 const daysOfWeek = [
   "Sunday",
@@ -68,23 +70,18 @@ function Friday({disableAudioDays, setDisableAudioDays}) {
           input10: "12:05",
           input11: "12:10",
           input12: "12:55",
-          input13: "13:00",
-          input14: "13:45",
-          input15: "14:00",
-          input16: "14:45",
-          input17: "14:50",
-          input18: "15:35",
-          input19: "15:40",
-          input20: "16:25",
-          input21: "16:30",
-          input22: "17:15",
-          input23: "17:20",
-          input24: "18:05",
-          input25: "18:10",
-          input26: "18:50",
-
-
-          // ... (other initial values)
+          input13: "13:20",
+          input14: "14:05",
+          input15: "14:10",
+          input16: "14:55",
+          input17: "15:00",
+          input18: "15:45",
+          input19: "15:50",
+          input20: "16:35",
+          input21: "16:40",
+          input22: "17:25",
+          input23: "17:30",
+          input24: "18:15",
         };
   });
 
@@ -245,6 +242,17 @@ function Friday({disableAudioDays, setDisableAudioDays}) {
                      
                     />
                   </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div className="defaultValue">
+              <h3 style={{
+                margin:"10px 0",
+              }}>2-смена</h3>
+              <div className="parentGrid">
+                <div className="">
                   <div className="grid">
                     <input
                         type="time"
@@ -262,16 +270,6 @@ function Friday({disableAudioDays, setDisableAudioDays}) {
                     />
                   </div>
 
-                </div>
-              </div>
-            </div>
-
-            <div className="defaultValue">
-              <h3 style={{
-                margin:"10px 0",
-              }}>2-смена</h3>
-              <div className="parentGrid">
-                <div className="">
                   <div className="grid">
                     <input
                       type="time"
@@ -351,21 +349,6 @@ function Friday({disableAudioDays, setDisableAudioDays}) {
                      defaultValue={fridayInputs.input24}
                       onFocus={() => handleInputFocus(23)}
                        onChange={(e) => handleInputChange("input24", e)}
-                    />
-                  </div>
-                  <div className="grid">
-                    <input
-                        type="time"
-                        defaultValue={fridayInputs.input25}
-                        onFocus={() => handleInputFocus(24)}
-                        onChange={(e) => handleInputChange("input25", e)}
-
-                    />
-                    <input
-                        type="time"
-                        defaultValue={fridayInputs.input26}
-                        onFocus={() => handleInputFocus(25)}
-                        onChange={(e) => handleInputChange("input26", e)}
                     />
                   </div>
                 </div>
