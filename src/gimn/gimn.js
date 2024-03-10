@@ -35,7 +35,7 @@ const Gimn = () => {
 
     if (dayOfWeek === 1 || dayOfWeek === 5) {
       const targetTime = new Date(currentDate);
-      targetTime.setHours(8, 2, 0); 
+      targetTime.setHours(8, 1, 20);
 
       const timeUntilPlay = targetTime - currentDate;
 
@@ -66,7 +66,7 @@ const Gimn = () => {
               position: "absolute",
             }}
           >
-            ..
+            ...
           </p>
         </div>
       )}

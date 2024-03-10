@@ -7,7 +7,7 @@ const LoginForm = ({ login, isAuthenticated }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-            if (email === 'Shkola51@gmail.com' && password === '04041992') {
+        if (email === 'soshdmitrievka@gmail.com' && password === 'Aspek1962') {
             login();
         } else {
             alert('Неправильный электронный адрес или пароль');
@@ -15,42 +15,42 @@ const LoginForm = ({ login, isAuthenticated }) => {
     };
 
     return (
-<div className="container" style={{ width:"100%" , height:"150%"}}>
-    <center>
-        <div className="admin">
-            <h1>Рады приветствовать вас на нашем сайте электронного звонка  от команды </h1>
+        <div className="container" style={{ width:"100%" , height:"150%"}}>
             <center>
-                <h2 style={{
+                <div className="admin">
+                    <h1>Рады приветствовать вас на нашем сайте электронного звонка  от команды </h1>
+                    <center>
+                        <h2 style={{
 
-                }} className='mr'>MRSUN!</h2>
+                        }} className='mr'>MRSUN!</h2>
+                    </center>
+                    <div className="part">
+                        <form  onSubmit={handleSubmit}>
+
+                            <input
+                                MRSUN
+                                type="email"
+                                placeholder="Электронный адрес"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+
+
+                            <input
+                                type="password"
+                                placeholder="Пароль"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+
+                            <button type="submit">Войти</button>
+                        </form>
+                    </div>
+                </div>
+
             </center>
-            <div className="part">
-                <form  onSubmit={handleSubmit}>
-                    <div>
-                        <input
-                            MRSUN
-                            type="email"
-                            placeholder="Электронный адрес"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
-                    </div>
-                    <div>
-                        <input
-                            type="password"
-                            placeholder="Пароль"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                        />
-                    </div>
-                    <button type="submit">Войти</button>
-                </form>
-            </div>
+
         </div>
-
-    </center>
-
-</div>
     );
 };
 
